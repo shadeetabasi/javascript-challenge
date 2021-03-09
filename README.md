@@ -39,6 +39,14 @@ You can handle this... right? The planet Earth needs to know what we have found!
 ### Screenshots of the Application
 
 - - -
+At the start page:
+![start-page](https://github.com/shadeetabasi/javascript-challenge/blob/main/Images/Alien-Sightings-Start-Page.png)
+
+When filtering the results:
+![filtered-results](https://github.com/shadeetabasi/javascript-challenge/blob/main/Images/Alien-Sightings-Table-Display.png)
+
+When there are no results to display:
+![no-results](https://github.com/shadeetabasi/javascript-challenge/blob/main/Images/Alien-Sightings-No-Results_Display.png)
 
 ### Dataset
 
