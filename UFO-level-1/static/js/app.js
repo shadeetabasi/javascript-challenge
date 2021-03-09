@@ -7,6 +7,22 @@ var button = d3.select("#filter-btn")
 // select body where table data should appear
 var tableBody = d3.select("tbody")
 
+function buildTable() {
+    for (var i = 0; i < data.length; i++) {
+        var trow = tableBody.append("tr");
+        var observation = filteredData[i]
+        trow.append("td").text(observation["datetime"]);
+        trow.append("td").text(observation["city"]);
+        trow.append("td").text(observation["state"]);
+        trow.append("td").text(observation["country"]);
+        trow.append("td").text(observation["shape"]);
+        trow.append("td").text(observation["durationMinutes"]);
+        trow.append("td").text(observation["comments"]);
+      }
+
+};
+buildTable(data);
+
 // Create event handlers 
 button.on("click", runEnter);
 tableBody.on("submit",runEnter);
