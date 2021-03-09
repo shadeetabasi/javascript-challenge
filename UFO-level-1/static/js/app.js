@@ -40,7 +40,6 @@ function runEnter() {
     console.log(inputValue);
     var filteredData = tableData.filter(data => data.datetime === inputValue);
 
-    
     if (filteredData.length > 0) {
 
         buildTable(filteredData);
