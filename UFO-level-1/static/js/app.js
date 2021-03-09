@@ -38,11 +38,15 @@ function runEnter() {
     var inputValue = inputDate.property("value");
 
     console.log(inputValue);
-    
-    // Filter date by date and console the return values
     var filteredData = tableData.filter(data => data.datetime === inputValue);
 
-    buildTable(filteredData);
+    
+    if (filteredData.length > 0) {
+
+        buildTable(filteredData);
+      } else {
+        var trow = tableBody.append("tr");
+        trow.append("tr").append("td").text('There were no alien sightings on that date!')
+      }
 
 };
-
