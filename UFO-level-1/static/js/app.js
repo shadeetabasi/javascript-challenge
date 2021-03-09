@@ -37,6 +37,9 @@ function runEnter() {
     // Get the value property of the input element
     var inputValue = inputDate.property("value");
 
+    // Remove all rows from previous queries
+    tableBody.selectAll('tr').remove();
+
     console.log(inputValue);
     var filteredData = tableData.filter(data => data.datetime === inputValue);
 
